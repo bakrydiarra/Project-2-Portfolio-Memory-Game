@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,119 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Document</title>
 </head>
+
 <body>
+    
+        <h1>Match 2Fik's Faces</h1>
+
+        <!--   Container for button rules, reset and info timer and moves -->
+
+        <div class="info-game">
+            <div class="btn-order">
+                <button type="button" class="btn">Rules</button><button type="button" class="btn">Reset</button>
+            </div>
+            <div class="indicator">
+                <span id="timer">60</span><span id="moves">Moves</span>
+            </div>
+        </div>
+        
+        <!-- Container for all cards -->
+
+        <div class="game-container">
+
+            <div class="memory-card" data-name="Alice">
+                <img src="assets/images/Portrait-Alice-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Alice">
+                <img src="assets/images/Portrait-Alice-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Dominique">
+                <img src="assets/images/Portrait-Dominique-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Dominique">
+                <img src="assets/images/Portrait-Dominique-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Fatima">
+                <img src="assets/images/Portrait-Fatima-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Firas">
+                <img src="assets/images/Portrait-Firas-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Firas">
+                <img src="assets/images/Portrait-Firas-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Francine">
+                <img src="assets/images/Portrait-Francine-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Francine">
+                <img src="assets/images/Portrait-Francine-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Marco">
+                <img src="assets/images/Portrait-Marco-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Marco">
+                <img src="assets/images/Portrait-Marco-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Omar">
+                <img src="assets/images/Portrait-Omar-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Omar">
+                <img src="assets/images/Portrait-Omar-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Sofiane">
+                <img src="assets/images/Portrait-Sofiane-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+            <div class="memory-card" data-name="Sofiane">
+                <img src="assets/images/Portrait-Sofiane-Web.jpg" alt="memory-card" class="face">
+                <img src="assets/images/Portrait-2Fik-Web.jpg" alt="memory-card" class="back">
+            </div>
+
+        </div>
+
+<!-- Rules modal window -->
+
+    <div class="overlay" id="rules">
+        <h1>Title</h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <button>Play</button>
+    </div>
+
+   <!--  Won modal window -->
+
+   <div class="overlay" id="won">
+    <h1>you win</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate blanditiis aliquid libero sint ut repellendus doloribus architecto impedit. Vero esse aperiam enim delectus sapiente nostrum laborum cupiditate. Unde, fugiat a?</p>
+    <button>Try again</button><button>Quit</button>
+   </div>
+
+  <!--  lost modal window -->
+
+   <div class="overlay" id="lost">
+    <h1>You lost</h1>
+    <button>try again</button><button>Quit</button>
+   </div>
+
     
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
