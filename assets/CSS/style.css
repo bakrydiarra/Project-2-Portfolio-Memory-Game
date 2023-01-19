@@ -9,15 +9,64 @@
 body {
     background-color: #845EC2;
     background-image: linear-gradient(#845EC2, #009EFA);
-    height: 100vh;
-   
+    min-height: 100%;
 }
 
 body #title {
     text-align: center;
     font-family: 'Bungee Shade', sans-serif;
+    color: #fff;
     margin-top: 4rem;
 }
+
+/* Positioning game-info-container */
+
+.game-info-container {
+    width: 640px;
+    height: 100px;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+}
+
+/* Positioning button and indicator timer and moves */
+
+.btn-order {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling all buttons with font-family  */
+
+.btn {
+    color: #fff;
+    background-color: #4FFBDF;
+    font-family: Fruktur, sans-serif;
+    font-size: 24px;
+    padding: 6px 28px;
+    border-radius: 5px;
+}
+
+.indicator {
+    margin-left: 2rem;
+}
+
+#timer,
+#moves {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.typo,
+#timer,
+#moves,
+li {
+    color: #fff;
+    font-size: 24px;
+    font-family: Fruktur, sans-serif;
+}
+
+/* Positioning container with cards */
 
 .game-container {
     width: 640px;
@@ -28,6 +77,8 @@ body #title {
     margin-top: 2rem;
     perspective: 1000px;
 }
+
+/* dimension and postioning memory-card and flip effect 3d - inspiration .https://www.w3schools.com/howto/howto_css_flip_image.asp */
 
 .memory-card {
     height: calc(25% - 10px);
@@ -42,7 +93,8 @@ body #title {
     transform: rotateY(180deg);
 }
 
-.face, .back {
+.face,
+.back {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -54,3 +106,55 @@ body #title {
 .face {
     transform: rotateY(180deg);
 }
+
+/* Styling modal window, win, lost and rules */
+
+.overlay {
+    width: 640px;
+    height: 300px;
+    background-color: #009EFA;
+    margin: auto;
+    border-radius: 5px;
+     display: flex;
+    flex-direction: column; 
+}
+
+/* Styling and positioning  .btn-modal  */
+
+.btn-modal {
+    color: #fff;
+    font-size: 24px;
+    background-color: #009EFA;
+    margin: 0;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.overlay h1, ul, button {
+    margin-top: 1rem;
+}
+
+.center button {
+    margin-top: 4rem;
+}
+
+.overlay h1 {
+    text-align: center;
+    font-family: 'Bungee Shade', sans-serif;
+    color: #fff;
+}
+
+.overlay li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

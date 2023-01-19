@@ -19,12 +19,14 @@
         <div class="btn-order">
             <button type="button" class="btn">Rules</button><button type="button" class="btn">Reset</button>
         </div>
-        <div class="container-timer">
-            <span>Time</span><span id="timer">60</span>
-        </div>
+        <div class="indicator">
+            <div class="container-timer">
+                <span class="typo">Time:</span><span id="timer">60</span>
+            </div>
 
-        <div class="container-moves">
-            <span>Moves</span><span>0</span>
+            <div class="container-moves">
+                <span class="typo">Moves:</span><span id="moves">0</span>
+            </div>
         </div>
     </div>
 
@@ -102,28 +104,50 @@
     <!-- Rules modal window -->
 
     <div class="overlay" id="rules">
-        <h1>How it works?</h1>
-        <ul>
-            <li>Click a card</li>
-            <li>Match the 2Fik's pairing-faces</li>
-            <li>Watch the time</li>
-        </ul>
-        <button>Play</button>
+        <div class="right">
+            <button class="btn-modal">&times;</button>
+        </div>
+        <div class="heading">
+            <h1>How it works?</h1>
+        </div>
+        <div>
+            <ul>
+                <li>Click a card</li>
+                <li>Match the faces</li>
+                <li>Beat the time</li>
+            </ul>
+        </div>
+        <div class="center">
+            <button class="btn">Play</button>
+        </div>
     </div>
 
     <!--  Won modal window -->
 
     <div class="overlay" id="won">
-        <h1>you won</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate blanditiis aliquid libero h?</p>
-        <button>Try again</button><button>Quit</button>
+        <div class="right">
+            <button class="btn-modal">&times;</button>
+        </div>
+        <div class="heading">
+            <h1>you won in <span>0</span> seconds</h1>
+        </div>
+        <div class="center">
+            <button class="btn">Again</button>
+        </div>
     </div>
 
     <!--  lost modal window -->
 
     <div class="overlay" id="lost">
-        <h1>You lost</h1>
-        <button>try again</button><button>Quit</button>
+        <div class="right">
+            <button class="btn-modal">&times;</button>
+        </div>
+        <div>
+            <h1>You lost</h1>
+        </div>
+        <div class="center">
+            <button class="btn">Again</button>
+        </div>
     </div>
 
 
