@@ -17,7 +17,8 @@
 
     <div class="game-info-container">
         <div class="btn-order">
-            <button type="button" class="btn">Rules</button><button type="button" class="btn">Reset</button>
+            <button type="button" class="btn" id="trigger">Rules</button>
+            <button type="button" class="btn">Reset</button>
         </div>
         <div class="indicator">
             <div class="container-timer">
@@ -103,9 +104,9 @@
 
     <!-- Rules modal window -->
 
-    <div class="overlay" id="rules">
+    <div class="rules" id="rules">
         <div class="right">
-            <button class="btn-modal">&times;</button>
+            <button class="btn-modal" id="close-rules">&times;</button>
         </div>
         <div class="heading">
             <h1>How it works?</h1>
@@ -118,13 +119,13 @@
             </ul>
         </div>
         <div class="center">
-            <button class="btn">Play</button>
+            <button class="btn" id="margin">Play</button>
         </div>
     </div>
 
     <!--  Won modal window -->
 
-    <div class="overlay" id="won">
+    <div class="won" id="won">
         <div class="right">
             <button class="btn-modal">&times;</button>
         </div>
@@ -132,13 +133,13 @@
             <h1>you won in <span>0</span> seconds</h1>
         </div>
         <div class="center">
-            <button class="btn">Again</button>
+            <button class="btn">Try Again</button>
         </div>
     </div>
 
     <!--  lost modal window -->
 
-    <div class="overlay" id="lost">
+    <div class="lost" id="lost">
         <div class="right">
             <button class="btn-modal">&times;</button>
         </div>
@@ -146,7 +147,7 @@
             <h1>You lost</h1>
         </div>
         <div class="center">
-            <button class="btn">Again</button>
+            <button class="btn">Try Again</button>
         </div>
     </div>
 

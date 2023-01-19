@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     background-color: #845EC2;
     background-image: linear-gradient(#845EC2, #009EFA);
     min-height: 100%;
@@ -66,6 +66,12 @@ li {
     font-family: Fruktur, sans-serif;
 }
 
+.typo,
+#timer,
+#moves {
+    margin-top: 1rem;
+}
+
 /* Positioning container with cards */
 
 .game-container {
@@ -109,15 +115,85 @@ li {
 
 /* Styling modal window, win, lost and rules */
 
-.overlay {
+.rules {
     width: 640px;
     height: 300px;
     background-color: #009EFA;
     margin: auto;
     border-radius: 5px;
-     display: flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
+
+.rules h1 {
+    text-align: center;
+    font-family: 'Bungee Shade', sans-serif;
+    color: #fff;
+}
+
+.rules,
+h1,
+ul,
+button {
+    margin-top: 1rem;
+}
+
+.rules li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.won {
+    width: 640px;
+    height: 300px;
+    background-color: #009EFA;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.won h1 {
+    text-align: center;
+    font-family: 'Bungee Shade', sans-serif;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+
+
+.lost {
+    width: 640px;
+    height: 300px;
+    background-color: #009EFA;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.lost h1 {
+    text-align: center;
+    font-family: 'Bungee Shade', sans-serif;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
 
 /* Styling and positioning  .btn-modal  */
 
@@ -133,28 +209,14 @@ li {
     justify-content: flex-end;
 }
 
-.overlay h1, ul, button {
-    margin-top: 1rem;
-}
+/* Positioning button */
 
-.center button {
+/* .center button {
     margin-top: 4rem;
-}
-
-.overlay h1 {
-    text-align: center;
-    font-family: 'Bungee Shade', sans-serif;
-    color: #fff;
-}
-
-.overlay li {
-    text-align: center;
-    list-style-type: none;
-}
+} */
 
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
