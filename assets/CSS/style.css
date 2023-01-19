@@ -167,7 +167,7 @@ button {
     text-align: center;
     font-family: 'Bungee Shade', sans-serif;
     color: #fff;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -184,7 +184,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    /* display: none; */
 }
 
 .lost h1 {
@@ -202,6 +202,9 @@ button {
     font-size: 24px;
     background-color: #009EFA;
     margin: 0;
+    border: 0px solid transparent;
+    padding-right: 5px;
+    cursor: pointer;
 }
 
 .right {
@@ -209,14 +212,53 @@ button {
     justify-content: flex-end;
 }
 
-/* Positioning button */
-
-/* .center button {
-    margin-top: 4rem;
-} */
-
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:640px) {
+    .game-container {
+        width: 350px;
+        height: 350px;
+
+    }
+
+    .game-info-container {
+        width: 350px
+    }
+
+    .btn {
+        font-size: 12px;
+
+    }
+
+    .typo {
+        font-size: 20px;
+    }
+
+    .rules,
+    .won,
+    .lost {
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+
+    .rules li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .won h1 {
+        margin-top: 0;
+    }
+
+    .lost h1 {
+        margin-bottom: 48px;
+    }
 }
