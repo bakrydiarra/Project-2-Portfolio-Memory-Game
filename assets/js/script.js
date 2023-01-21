@@ -10,8 +10,6 @@ const closeRules = document.getElementById("close-rules");
 const closeWon = document.getElementById("close-won");
 const closeLost = document.getElementById("close-lost");
 const timer = document.getElementById("timer");
-
-
 let cardOne, cardTwo;
 let boardFreeze = false;
 let flipped = false;

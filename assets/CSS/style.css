@@ -45,6 +45,7 @@ body #title {
     font-size: 24px;
     padding: 6px 28px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .indicator {
@@ -89,6 +90,7 @@ li {
 .memory-card {
     height: calc(25% - 10px);
     width: calc(25% - 10px);
+    cursor: pointer;
     margin: 5px;
     position: relative;
     transition: 0.8s;
