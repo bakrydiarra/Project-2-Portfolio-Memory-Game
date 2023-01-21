@@ -1,9 +1,14 @@
 const cards = document.querySelectorAll(".memory-card");
 const trigger = document.getElementById("trigger");
 const rules = document.getElementById("rules");
-const closeRules = document.getElementById("close-rules");
 const lost = document.getElementById("lost");
 const won = document.getElementById("won");
+const btn_rules = document.getElementById("btn-rules");
+const btn_won = document.getElementById("btn-won");
+const btn_lost = document.getElementById("btn-lost");
+const closeRules = document.getElementById("close-rules");
+const closeWon = document.getElementById("close-won");
+const closeLost = document.getElementById("close-lost");
 const timer = document.getElementById("timer");
 let cardOne, cardTwo;
 let boardFreeze = false;
@@ -11,11 +16,8 @@ let flipped = false;
 let StartGame = false;
 let matched;
 let totalMatched = 0;
-/* let timer = 60; */
 let moves = 1;
 let reset;
-/* let time;
-let seconds = 0; */
 let interval;
 let counter = 60;
 
@@ -24,6 +26,13 @@ let counter = 60;
 cards.forEach(card => card.addEventListener('click', flipCard));
 trigger.addEventListener("click", showRules);
 closeRules.addEventListener("click", exitRules);
+closeWon.addEventListener("click", exitWon);
+closeLost.addEventListener("click", exitLost);
+btn_rules.addEventListener("click", exitRules );
+btn_won.addEventListener("click", exitWon);
+btn_lost.addEventListener("click",exitLost );
+
+
 
 
 /* onclick function for cards, add flip class for css effects
@@ -120,18 +129,7 @@ function addmoves() {
 }
 
 
-/* function CountDown() {
-    setInterval(() => {
-        timer--;
-        document.getElementById("timer").innerHTML = timer;
-        if (timer == 1) {
-            clearInterval(timer);
-
-        }
-    }, 1000);
-
-} */
-
+/* Timer */
 
 function startCountdown() {
 
@@ -147,16 +145,25 @@ function startCountdown() {
 
 }
 
-/* Timer */
-
-
+/* popup window lost */
 
 function gameOver() {
     clearInterval(interval);
-    lost.style.display = "block";
+    lost.style.display = "block";  
 }
+
+function exitLost () {
+    lost.style.display = "none";
+}
+
+
+/* popup window won */
 
 function showVictory() {
     won.style.display = "block"
     clearInterval(interval);
+}
+
+function exitWon() {
+    won.style.display = "none";
 }
