@@ -10,27 +10,31 @@ const closeRules = document.getElementById("close-rules");
 const closeWon = document.getElementById("close-won");
 const closeLost = document.getElementById("close-lost");
 const timer = document.getElementById("timer");
+
+
 let cardOne, cardTwo;
 let boardFreeze = false;
 let flipped = false;
 let StartGame = false;
 let matched;
 let totalMatched = 0;
-let moves = 1;
-let reset;
+let moves = 0;
+let resultMoves;
 let interval;
-let counter = 60;
+let counter = 100;
+let resultTime;
 
 /* event */
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+shuffle();
 trigger.addEventListener("click", showRules);
 closeRules.addEventListener("click", exitRules);
 closeWon.addEventListener("click", exitWon);
 closeLost.addEventListener("click", exitLost);
-btn_rules.addEventListener("click", exitRules );
+btn_rules.addEventListener("click", exitRules);
 btn_won.addEventListener("click", exitWon);
-btn_lost.addEventListener("click",exitLost );
+btn_lost.addEventListener("click", exitLost);
 
 
 
@@ -41,7 +45,7 @@ codde take from https://www.youtube.com/playlist?list=PLngoRLGHq3kCpoT0urRHDPsNV
 function flipCard() {
     if (!StartGame) {
         StartGame = true;
-         startCountdown();
+        startCountdown();
     }
 
     if (boardFreeze) return; /* return is boardFreeze is true then the rest of the function wont be executed */
@@ -69,6 +73,7 @@ function showRules() {
 
 function exitRules() {
     rules.style.display = "none";
+    rest();
 }
 
 function cardsMatchCheck() {
@@ -123,6 +128,7 @@ function recountCards() {
 /* add moves after a second so that it appears after the remove("flip") */
 
 function addmoves() {
+    moves = 1;
     setTimeout(() => {
         document.getElementById("moves").innerHTML = moves++;
     }, 1000);
@@ -149,11 +155,12 @@ function startCountdown() {
 
 function gameOver() {
     clearInterval(interval);
-    lost.style.display = "block";  
+    lost.style.display = "block";
 }
 
-function exitLost () {
+function exitLost() {
     lost.style.display = "none";
+    rest();
 }
 
 
@@ -162,8 +169,42 @@ function exitLost () {
 function showVictory() {
     won.style.display = "block"
     clearInterval(interval);
+    resultTime = document.getElementById("timer").innerHTML;
+    document.getElementById("final-time").innerHTML = resultTime;
+    resultMoves = document.getElementById("moves").innerHTML;
+    document.getElementById("final-moves").innerHTML = resultMoves;
+
 }
 
 function exitWon() {
     won.style.display = "none";
+    rest();
+}
+
+/* code taken from ...  */
+
+function shuffle() {
+    cards.forEach(cards => {
+        let randomPosition = Math.floor(Math.random() * 16);
+        cards.style.order = randomPosition;
+    });
+
+}
+
+function rest() {
+    setTimeout(() => {
+    cardOne = null;
+    cardTwo = null;
+    boardFreeze = false;
+    flipped = false;
+    StartGame = false;
+    totalMatched = 0;
+    moves = 0;
+    counter = 100;
+    document.getElementById("timer").innerHTML = 100;
+    cards.forEach(cardReturn => cardReturn.classList.remove('flip'));
+    shuffle();
+    cards.forEach(card => card.addEventListener('click', flipCard));
+}, 500);
+
 }
