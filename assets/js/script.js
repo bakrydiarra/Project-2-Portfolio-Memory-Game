@@ -3,14 +3,21 @@ const trigger = document.getElementById("trigger");
 const rules = document.getElementById("rules");
 const closeRules = document.getElementById("close-rules");
 const lost = document.getElementById("lost");
+const won = document.getElementById("won");
+const timer = document.getElementById("timer");
 let cardOne, cardTwo;
 let boardFreeze = false;
 let flipped = false;
 let StartGame = false;
 let matched;
-let timer = 60;
+let totalMatched = 0;
+/* let timer = 60; */
 let moves = 1;
 let reset;
+/* let time;
+let seconds = 0; */
+let interval;
+let counter = 60;
 
 /* event */
 
@@ -25,15 +32,15 @@ codde take from https://www.youtube.com/playlist?list=PLngoRLGHq3kCpoT0urRHDPsNV
 function flipCard() {
     if (!StartGame) {
         StartGame = true;
-        startCountdown(60);
+         startCountdown();
     }
-    
+
     if (boardFreeze) return; /* return is boardFreeze is true then the rest of the function wont be executed */
     if (this === cardOne) return; /* to identify the first card flipped */
-    
+
     this.classList.add("flip");
 
-    
+
 
     if (!flipped) {
         flipped = true;
@@ -57,9 +64,15 @@ function exitRules() {
 
 function cardsMatchCheck() {
     matched = cardOne.dataset.name === cardTwo.dataset.name;
+    if (matched) totalMatched += 1;
+    if (totalMatched == 8) {
+        showVictory();
+    }
+
 
     if (matched) {
         lockedCards();
+
     } else {
         notmached();
     }
@@ -70,6 +83,10 @@ function lockedCards() {
     cardOne.removeEventListener('click', flipCard);
     cardTwo.removeEventListener('click', flipCard);
     recountCards();
+}
+
+function addMatch() {
+    totalMatched++;
 }
 
 function notmached() {
@@ -84,7 +101,7 @@ function notmached() {
     addmoves();
 }
 
-
+/* function allows to count the next pair of cards */
 
 function recountCards() {
     boardFreeze = false;
@@ -103,10 +120,6 @@ function addmoves() {
 }
 
 
-/* function gameOver() {
-    lost.style.display = "block";
-} */
-
 /* function CountDown() {
     setInterval(() => {
         timer--;
@@ -120,24 +133,30 @@ function addmoves() {
 } */
 
 
-function startCountdown(seconds) {
-    let counter = seconds;
-      
-    const interval = setInterval(() => {
-     counter--;
-        document.getElementById("timer").innerHTML = counter;
-      if (counter < 1 ) {
-        clearInterval(interval);
-        gameOver ();
-      }
-    }, 1000);
-    
-  }
-  
-  function gameOver () {
+function startCountdown() {
 
+
+    interval = setInterval(() => {
+        counter--;
+        document.getElementById("timer").innerHTML = counter;
+        if (counter < 1) {
+
+            gameOver();
+        }
+    }, 1000);
+
+}
+
+/* Timer */
+
+
+
+function gameOver() {
+    clearInterval(interval);
     lost.style.display = "block";
-  }
-   
-  
-  
+}
+
+function showVictory() {
+    won.style.display = "block"
+    clearInterval(interval);
+}
