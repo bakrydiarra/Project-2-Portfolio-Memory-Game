@@ -36,11 +36,21 @@ body #title {
     flex-direction: column;
 }
 
-/* Styling all buttons with font-family  */
+/* Styling all buttons modal window rules, won lost  */
 
 .btn {
     color: #fff;
     background-color: #4FFBDF;
+    font-family: Fruktur, sans-serif;
+    font-size: 24px;
+    padding: 6px 28px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#trigger, #reload {
+    color: #fff;
+    background-color:#009EFA;
     font-family: Fruktur, sans-serif;
     font-size: 24px;
     padding: 6px 28px;
@@ -253,16 +263,18 @@ screen and (max-height:900px) {
     }
 
     .btn {
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
     #trigger {
         margin-top: 16px;
+        font-size: 14px
     }
 
     #reload {
         margin-top: 16px;
+        font-size: 14px
     }
 
     .typo {
@@ -312,16 +324,18 @@ screen and (max-height:900px) {
     }
 
     .btn {
-        font-size: 12px;
+        font-size: 14px;
 
     }
 
     #trigger {
         margin-top: 16px;
+        font-size: 14px
     }
 
     #reload {
         margin-top: 16px;
+        font-size: 14px
     }
 
     .typo {

@@ -7,10 +7,8 @@
 
 ## Site Info
 
-* Ludmilla-Mary is designed as a portfolio for a fictional character created by the artist 2fik . The purpose of the website is to encourage people to be fierce by embracing Ludmilla-Mary’s catwalk activism philosophy.  There is also a contact page which can be used to register to Ludmilla-Mary’s newsletter. Ludmilla-Mary’s website lends his character more complexity and anchors him even more in our reality. The website  is a touching, funny and insolent representation of Ludmilla-Mary. 
-This website is targeted towards 2fik’s art work supporters who follow Ludmilla-Mary’s tribulations. Ludmilla-Mary’s website will be useful for followers or newcomers to understand  her colorfull world. It is as well a  good illustration for an influencer parody portfolio where laughters are combined with curiosity.
-
-* This is my Project Portfolio 1 submission for Code Institute's Diploma in Web Application Development course. Technologies used include HTML, CSS.
+* Match 2fik's Faces is created for all users who like to play simple memory games. The  user who knows 2Fik’s  art work might have an additional interest as well. 
+* This is my Project Portfolio 2 submission for Code Institute's Diploma in Web Application Development course. Technologies used include HTML, CSS, JavaScript.
 
 
 
@@ -25,12 +23,20 @@ This website is targeted towards 2fik’s art work supporters who follow Ludmill
 
 -   ### User stories
 
-- A first time user experience:  To be intrigued and want to discover who’s Ludmilla-Mary and to understand the motto of Landing page Be Fierce, Be Real, Be Me. The contact form is an invitation to access 
-  more  information about the character.
--  Returning user experience: to dive  deeper into the strange world of Ludmilla-Mary  and enjoy  the ironic humor of the website and click to the social media to discover 2fik’s universe.
-- Frequent user experience: to consider the website as an artistic curiosity.
-
-- Main Objective: Get  new followers for Ludmilla-Mary and attention to the art work of 2Fik. To achieve our goals, the website muss be easy to navigate,  with a minimalist aesthetic to emphasise the pictures of Ludmilla-Mary illustrated with  text which underline her guerrilla catwalk activism philosophy. Some discret playfully call for action guidance bring the user to navigate furthermore. The skeleton of our design was based on hand made sketched wireframes of the desktop appearance.
+ - As a user I  can:
+ 
+   - see a set of cards ranged in fourth rows and fourth columns style game with cards on display - these cards will have a front and back image.
+   - read  easy and short explained rules by clicking the button rules
+   -  escape the rule explanation by clicking the “x” or the the button play.
+   - click a card to start the game
+   - click only on two cards at a time, to try to find a matched pair.
+   - play on a limited time - 60 seconds - to find all matched pair.
+   - expect that once the game has been completed, the timer will stop.
+   - receive a message of  victory and score at the end of the game when all matched pairs have been found.
+   - receive a message to be informed that he has lost when the timer arrived at 0.
+   -  close the pop up  victory or defeat messages by clicking  on the "x" button or  clicking the button try again.
+   - Reset the game at any time during play.
+   - can test his memory skills and enjoy the challenge to beat the timer.
 
 
   - ### Wireframes
