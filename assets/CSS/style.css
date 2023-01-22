@@ -73,7 +73,7 @@ li {
     margin-top: 1rem;
 }
 
-/* Positioning container with cards */
+/* Positioning items in  game-container */
 
 .game-container {
     width: 640px;
@@ -111,11 +111,13 @@ li {
     backface-visibility: hidden;
 }
 
+/* roatatin effect associated with Eventlistener "flip" */
+
 .face {
     transform: rotateY(180deg);
 }
 
-/* Styling modal window, win, lost and rules */
+/* Styling modal windows, win, lost and rules */
 
 .rules {
     width: 640px;
@@ -219,6 +221,8 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+/* responsive breakingpoint at 640 px */
 
 @media screen and (max-width:640px) {
     .game-container {

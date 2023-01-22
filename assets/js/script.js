@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeRules = document.getElementById("close-rules");
     const closeWon = document.getElementById("close-won");
     const closeLost = document.getElementById("close-lost");
-    /* const timer = document.getElementById("timer"); */
     let cardOne, cardTwo;
     let boardFreeze = false;
     let flipped = false;
@@ -113,11 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
     /* function allows to count the next pair of cards */
 
     function recountCards() {
-        boardFreeze = false;
-        flipped = false;
-        cardOne = null;
-        cardTwo = null;
-
+        [boardFreeze, flipped] = [false, false];
+        [cardOne, cardTwo] = [null, null];
     }
 
     /* add moves after a second so that it appears after the remove("flip") */
@@ -172,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
         rest();
     }
 
-    /* code taken from ...  */
+    /* code taken from  https://www.youtube.com/watch?v=1G6MwIy-7Yc&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=8 and adapted wothout IIFE */
 
     function shuffle() {
         cards.forEach(cards => {
@@ -185,11 +181,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function rest() {
         clearInterval(interval);
         setTimeout(() => {
-            cardOne = null;
-            cardTwo = null;
-            boardFreeze = false;
-            flipped = false;
-            startGame = false;
+            [cardOne, cardTwo] = [null, null];
+            [boardFreeze, flipped, startGame] = [false, false, false];
             totalMatched = 0;
             moves = 0;
             counter = 60;
