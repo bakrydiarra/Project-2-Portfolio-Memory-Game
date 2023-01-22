@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let moves = 0;
     let resultMoves = 0;
     let interval;
-    let counter = 60;
+    let timer = 60;
     let resultTime;
 
     /* event */
@@ -42,8 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    /* onclick function for cards, add flip class for css effects
-    codde take from https://www.youtube.com/watch?v=HsD6f7_3nIg&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=2 and adapted */
+
 
     function flipCard() {
         if (!startGame) {
@@ -56,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (this === cardOne) return; /* to identify the first card flipped */
 
         this.classList.add("flip");
-
+        /* onclick function for cards, add flip class for css effects
+           codde take from https://www.youtube.com/watch?v=HsD6f7_3nIg&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=2 and adapted */
 
 
         if (!flipped) {
@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function cardsMatchCheck() {
         matched = cardOne.dataset.name === cardTwo.dataset.name;
+        /* checking if CardOne & CardTwo 'data-id' are a match initial code from https://www.youtube.com/watch?v=CtFOeJneBaA&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv */
         if (matched) totalMatched += 1;
         matched ? lockedCards() : unflipCards();
         if (totalMatched == 8) {
@@ -109,14 +110,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 900);
     }
 
-    /* function allows to count the next pair of cards */
+    /* function allows to recount the next pair cardOne and cardTwo*/
 
     function recountCards() {
         [boardFreeze, flipped] = [false, false];
         [cardOne, cardTwo] = [null, null];
     }
 
-    /* add moves after a second so that it appears after the remove("flip") */
 
     function showMoves(moves) {
         document.getElementById("moves").innerHTML = moves;
@@ -129,16 +129,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         interval = setInterval(() => {
-            counter--;
-            document.getElementById("timer").innerHTML = counter;
-            if (counter < 1) {
+            timer--;
+            document.getElementById("timer").innerHTML = timer;
+            if (timer < 1) {
                 gameOver();
             }
         }, 1000);
 
     }
 
-    /* popup window lost */
+    /* modal window lost */
 
     function gameOver() {
         clearInterval(interval);
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    /* popup window won */
+    /* modal window won */
 
     function showVictory() {
         won.style.display = "block"
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
             [boardFreeze, flipped, startGame] = [false, false, false];
             totalMatched = 0;
             moves = 0;
-            counter = 60;
+            timer = 60;
             resultTime = 0;
             resultMoves;
             document.getElementById("timer").innerHTML = 60;
