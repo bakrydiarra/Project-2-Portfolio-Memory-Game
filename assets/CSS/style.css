@@ -127,7 +127,7 @@ li {
     backface-visibility: hidden;
 }
 
-/* roatatin effect associated with Eventlistener "flip" */
+/* roatating effect associated with Eventlistener "flip" */
 
 .face {
     transform: rotateY(180deg);

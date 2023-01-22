@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const btn_rules = document.getElementById("btn-rules");
     const btn_won = document.getElementById("btn-won");
     const btn_lost = document.getElementById("btn-lost");
-    const closeRules = document.getElementById("close-rules");
+    const closeRules = document.getElementById("close-rules"); 
     const closeWon = document.getElementById("close-won");
     const closeLost = document.getElementById("close-lost");
     let cardOne, cardTwo;
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
             cards.forEach(cardReturn => cardReturn.classList.remove('flip'));
             shuffle();
             cards.forEach(card => card.addEventListener('click', flipCard));
-            addmoves(moves);
+            showMoves(moves);
         }, 500);
 
     }

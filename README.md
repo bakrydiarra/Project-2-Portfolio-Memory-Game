@@ -1,108 +1,167 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Match 2fik's Faces
 
-Welcome BakryDiarra,
+## Project Portfolio 2 - Full Stack Development 
+##  Design an interactive Front-End web application using HTML and CSS and JavaScript 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Am I responsive Screenshot]
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Site Info
 
-## Gitpod Reminders
+* Ludmilla-Mary is designed as a portfolio for a fictional character created by the artist 2fik . The purpose of the website is to encourage people to be fierce by embracing Ludmilla-Mary’s catwalk activism philosophy.  There is also a contact page which can be used to register to Ludmilla-Mary’s newsletter. Ludmilla-Mary’s website lends his character more complexity and anchors him even more in our reality. The website  is a touching, funny and insolent representation of Ludmilla-Mary. 
+This website is targeted towards 2fik’s art work supporters who follow Ludmilla-Mary’s tribulations. Ludmilla-Mary’s website will be useful for followers or newcomers to understand  her colorfull world. It is as well a  good illustration for an influencer parody portfolio where laughters are combined with curiosity.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* This is my Project Portfolio 1 submission for Code Institute's Diploma in Web Application Development course. Technologies used include HTML, CSS.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Index – Table of Contents
+* [User Experience (UX)](#user-experience-ux)
+* [Features](#features)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Experience (UXD)
 
-A blue button should appear to click: _Make Public_,
+-   ### User stories
 
-Another blue button should appear to click: _Open Browser_.
+- A first time user experience:  To be intrigued and want to discover who’s Ludmilla-Mary and to understand the motto of Landing page Be Fierce, Be Real, Be Me. The contact form is an invitation to access 
+  more  information about the character.
+-  Returning user experience: to dive  deeper into the strange world of Ludmilla-Mary  and enjoy  the ironic humor of the website and click to the social media to discover 2fik’s universe.
+- Frequent user experience: to consider the website as an artistic curiosity.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- Main Objective: Get  new followers for Ludmilla-Mary and attention to the art work of 2Fik. To achieve our goals, the website muss be easy to navigate,  with a minimalist aesthetic to emphasise the pictures of Ludmilla-Mary illustrated with  text which underline her guerrilla catwalk activism philosophy. Some discret playfully call for action guidance bring the user to navigate furthermore. The skeleton of our design was based on hand made sketched wireframes of the desktop appearance.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - ### Wireframes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+   
 
-------
+   - The sketches indicate a strategy focused on the desktop first. The mobile version was main to be reflected with the flex-box reaction, considering that we have a desktop layout with two columns for all pages - except for Home page and confirmaton page. The idea was to count on the height perspective to pile up our content.
+   - The picture as logo was abandonned due to technique difficulties and for a better time management.
+   - The social media icons were reduced to 3 and postioned in the center of the footer for aesthetic purpose.
+   - A video was added to the page Be Real in order to have a coherence with the page Be fierce.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+   ### Issues Faced during development
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - Background-image was often used to avoid resizing issue with the images. But the gallery showed that it could have been possible to work with the chosen structure with the img element.
+    - This indicates the possiblity to work later on the visual content to improve the quality of the images and give a better responsive sizing for all devices.
+    - The text content once displayed in column required a lot proportions skills to offer a cohesive visual. The actual result is satisfactory but could be improved with more skills and time.
+    
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  - ### Design
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  -   ### Website style
+    - The style of the website chosen was 2 formats, one implemting to the Home-page and the Confirmation, the other one for Be Fierce, Be Real and Be Me. The navigation bar and the little expression above the footer allow the user to navigate to each page. The font-familly chosen for the text are the pair Dancing Script and Josefin Sans giving a feminine touch.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   ### Imagery
+    -  The visual cohesion is maintained by the photos that represent constantly Ludmilla-Mary. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+-   ### Colour Scheme
+    -  The two dominant colors are pink and wite. The pink theme was taken with the chrome Developer tools color picker from one picture where Ludmilla-Mary is dressed in pink. The yellow and blue color schemes were chosen with the same technique.
+ 
+## Features
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Existing Features
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Features which could be implemented in the future
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Testing
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Validator Testing
 
-------
+ - HTML : No errors were detected when passing the site through the official.
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+ 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+ - CSS : No errors were detected when passing the site through the official.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Lighthouse Testing
+ 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  - Overall, the site's performances are quite good.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Browser Compatibility
 
-**Can I opt out?**
+  - Testing has been carried out on the following browsers :
+  - Safari on macOS Ventura (Safari  Version 13.0.1)
+  - Chrome Version Version  Version 108.0.5359.124 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Test Cases and Results
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+ - Chrome Developer tools and Mozilla Firefox Web Developer Tools were used throughout the development of the site to test functionality, responsive 
+    behaviour, alignment correctness etc.
+ - To check the respponsive design, I also used (http://www.responsinator.com/) 
+ - Site responsivness visualised using [Am I Responsive?](https://ui.dev/amiresponsive)
+ - Manual testing on different browsers and devices, those mentionned above and had feedbacks from friends regarding other various devices.
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+_Nav bar testing_
 
----
+ - Test each link on the nav bar. Each link took me to the relevant section required, the Logo took me home as expected. The nav bar stayed in place when scrolling ensuring the user has access to navigation at all times. Nav "active" page effect works as expected when clicking between pages and underlines blue.
 
-Happy coding!
+_Footer testing_
+
+ - Test each social media Icon. Each social media icon link opened the relevant social media website in a new tab as expected when clicked. Footer behaved how I expected appearing at the bottom of the site when the user scrolls or navigates down to the last section (Contact).
+
+_Nav, footer, logo and tip hover effects testing_
+
+ - Test the expected result of the hover effect on the nav links, as well as the social media icon links on the footer and the tips text above the footer. All nav links and social media icons behaved as expected when hovering over with the mouse, all itemes change to yellow and inscreased their font-size.
+
+_Registration Newsletter testing_
+
+ - Test the expected result of filling up the form which sent me to the confirmation page. I checked the drop down text used with the element details. 
+
+
+
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+ - In the Github repository, navigate to the Settings tab
+ - From the source section drop-down menu, select the main branch
+ - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
+ - The live link can be found here: (https://bakrydiarra.github.io/Project-1-Portfolio/)
+
+ 
+## Credits 
+
+### Code
+  
+
+- HTML and CSS lessons from [W3Schools](https://www.w3schools.com/) were used as guide when designing the site, for example implementing flexbox, background-image properties.
+
+- The motto form the index page is inspired from @Vlt_dev's code. I used his micro structure and color tpye and then I elevated in a bigger model. Here's the original code (https://www.instagram.com/p/Cj7jr7KD5cU/)
+
+- Code Institute materials were used to assist writing README file, such as the [README template](https://github.com/Code-Institute-Solutions/readme-template) and the [Markdown Cheatsheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+- The Code Institute [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) was used as a template for the gitpod environment.
+
+
+### Media 
+
+ 
+ - The fonts used were imported from [Google Fonts](https://fonts.google.com/)
+ - The photos used for the website were procvided by the artist 2Fik.
+ - Photograhers:
+   - 2fik
+   
+
+### Content
+ 
+ - All texts were written by me.
+
+### Acknowledgments
+
+ - Many thanks to my Mentor Antonio Rodriguez for helpful feedback, industry insights and recommended tools.
+ - Many thanls to my friends and family for helping me testing the website and for their precious feedbacks.
