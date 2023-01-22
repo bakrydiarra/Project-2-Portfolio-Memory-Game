@@ -224,7 +224,8 @@ button {
 
 /* responsive breakingpoint at 640 px */
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px),
+ (max-height:640px) {
     .game-container {
         width: 350px;
         height: 350px;
