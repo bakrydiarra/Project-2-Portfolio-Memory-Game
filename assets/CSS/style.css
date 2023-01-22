@@ -16,7 +16,7 @@ body #title {
     text-align: center;
     font-family: 'Bungee Shade', sans-serif;
     color: #fff;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 /* Positioning game-info-container */
@@ -25,7 +25,7 @@ body #title {
     width: 640px;
     height: 100px;
     margin: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
     display: flex;
 }
 
@@ -48,15 +48,31 @@ body #title {
     cursor: pointer;
 }
 
+/* Positioning button in div .game-info-container */
+
+#trigger {
+    margin-top: 0;
+}
+
+#reload {
+    margin-top: 10px;
+}
+
+/* Positioning info time and moves to button rules and reset */
+
 .indicator {
     margin-left: 2rem;
 }
+
+/* Positioning time and move to each other */
 
 #timer,
 #moves {
     display: inline-block;
     margin-left: 0.5rem;
 }
+
+/* Styling the item giving info time and moves */
 
 .typo,
 #timer,
@@ -222,10 +238,10 @@ button {
     align-items: center;
 }
 
-/* responsive breakingpoint at 640 px */
+/* responsive breakingpoint at 640px width and 900px height */
 
 @media screen and (max-width:640px),
- (max-height:640px) {
+screen and (max-height:900px) {
     .game-container {
         width: 350px;
         height: 350px;
@@ -239,6 +255,14 @@ button {
     .btn {
         font-size: 12px;
 
+    }
+
+    #trigger {
+        margin-top: 16px;
+    }
+
+    #reload {
+        margin-top: 16px;
     }
 
     .typo {
@@ -259,6 +283,66 @@ button {
 
     h1 {
         font-size: 24px;
+    }
+
+    .won h1 {
+        margin-top: 0;
+    }
+
+    .lost h1 {
+        margin-bottom: 48px;
+    }
+}
+
+
+
+/* breaking point  min-height 480 */
+
+@media screen and (max-height:480px) {
+    .game-container {
+        width: 300px;
+        height: 300px;
+        margin-top: 1rem;
+
+    }
+
+    .game-info-container {
+        width: 300px;
+        margin-top: 1rem;
+    }
+
+    .btn {
+        font-size: 12px;
+
+    }
+
+    #trigger {
+        margin-top: 16px;
+    }
+
+    #reload {
+        margin-top: 16px;
+    }
+
+    .typo {
+        font-size: 20px;
+    }
+
+    .rules,
+    .won,
+    .lost {
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+
+    .rules li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 1rem;
     }
 
     .won h1 {
