@@ -1,6 +1,10 @@
+/* DomContenLoaded function  take from the love-maths challenge and adapted
+Wait for the DOM to finish loading before running the game */
+
 document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll(".memory-card");
     const trigger = document.getElementById("trigger");
+    const reload = document.getElementById("reload");
     const rules = document.getElementById("rules");
     const lost = document.getElementById("lost");
     const won = document.getElementById("won");
@@ -10,17 +14,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeRules = document.getElementById("close-rules");
     const closeWon = document.getElementById("close-won");
     const closeLost = document.getElementById("close-lost");
-    const timer = document.getElementById("timer");
+    /* const timer = document.getElementById("timer"); */
     let cardOne, cardTwo;
     let boardFreeze = false;
     let flipped = false;
-    let StartGame = false;
+    let startGame = false;
     let matched;
     let totalMatched = 0;
     let moves = 0;
     let resultMoves = 0;
     let interval;
-    let counter = 100;
+    let counter = 60;
     let resultTime;
 
     /* event */
@@ -28,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cards.forEach(card => card.addEventListener('click', flipCard));
     shuffle();
     trigger.addEventListener("click", showRules);
+    reload.addEventListener("click", rest);
     closeRules.addEventListener("click", exitRules);
     closeWon.addEventListener("click", exitWon);
     closeLost.addEventListener("click", exitLost);
@@ -39,11 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     /* onclick function for cards, add flip class for css effects
-    codde take from https://www.youtube.com/playlist?list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv and adapted */
+    codde take from https://www.youtube.com/watch?v=HsD6f7_3nIg&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=2 and adapted */
 
     function flipCard() {
-        if (!StartGame) {
-            StartGame = true;
+        if (!startGame) {
+            /*  used a startGame variable in a  condition  in oder to set the function startCountdown at the moment when the user click a card */
+            startGame = true;
             startCountdown();
         }
 
@@ -67,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showRules() {
         rules.style.display = "block";
-        
+
     }
 
 
@@ -79,18 +85,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function cardsMatchCheck() {
         matched = cardOne.dataset.name === cardTwo.dataset.name;
         if (matched) totalMatched += 1;
+        matched ? lockedCards() : unflipCards();
         if (totalMatched == 8) {
             setTimeout(() => {
                 showVictory();
-            }, 1500);
-        }
-
-
-        if (matched) {
-            lockedCards();
-
-        } else {
-            notmached();
+            }, 900);
         }
     }
 
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
         recountCards();
     }
 
-    function notmached() {
+    function unflipCards() {
         boardFreeze = true;
         setTimeout(() => {
             cardOne.classList.remove("flip");
@@ -190,13 +189,13 @@ document.addEventListener('DOMContentLoaded', function () {
             cardTwo = null;
             boardFreeze = false;
             flipped = false;
-            StartGame = false;
+            startGame = false;
             totalMatched = 0;
             moves = 0;
-            counter = 100;
+            counter = 60;
             resultTime = 0;
             resultMoves;
-            document.getElementById("timer").innerHTML = 100;
+            document.getElementById("timer").innerHTML = 60;
             document.getElementById("moves").innerHTML = 0;
             cards.forEach(cardReturn => cardReturn.classList.remove('flip'));
             shuffle();

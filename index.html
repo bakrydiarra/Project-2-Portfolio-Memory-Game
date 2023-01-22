@@ -18,11 +18,11 @@
     <div class="game-info-container">
         <div class="btn-order">
             <button type="button" class="btn" id="trigger">Rules</button>
-            <button type="button" class="btn">Reset</button>
+            <button type="button" class="btn" id="reload">Reset</button>
         </div>
         <div class="indicator">
             <div class="container-timer">
-                <span class="typo">Time:</span><span id="timer">100</span>
+                <span class="typo">Time:</span><span id="timer">60</span>
             </div>
 
             <div class="container-moves">
@@ -34,6 +34,8 @@
     <!-- Container for all cards -->
 
     <div class="game-container">
+
+       <!--  structure ovelapping inspired by https://www.w3schools.com/howto/howto_css_flip_image.asp -->
 
         <div class="memory-card" data-name="Alice">
             <img src="assets/images/Portrait-Alice-Web.jpg" alt="memory-card" class="face">
