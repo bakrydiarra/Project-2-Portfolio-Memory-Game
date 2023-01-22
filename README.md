@@ -24,7 +24,7 @@
 -   ### User stories
 
  - As a user I  can:
- 
+
    - see a set of cards ranged in fourth rows and fourth columns style game with cards on display - these cards will have a front and back image.
    - read  easy and short explained rules by clicking the button rules
    -  escape the rule explanation by clicking the “x” or the the button play.
@@ -40,14 +40,9 @@
 
 
   - ### Wireframes
+    - All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 
    
-
-   - The sketches indicate a strategy focused on the desktop first. The mobile version was main to be reflected with the flex-box reaction, considering that we have a desktop layout with two columns for all pages - except for Home page and confirmaton page. The idea was to count on the height perspective to pile up our content.
-   - The picture as logo was abandonned due to technique difficulties and for a better time management.
-   - The social media icons were reduced to 3 and postioned in the center of the footer for aesthetic purpose.
-   - A video was added to the page Be Real in order to have a coherence with the page Be fierce.
-
 
    ### Issues Faced during development
 
@@ -56,16 +51,15 @@
     - The text content once displayed in column required a lot proportions skills to offer a cohesive visual. The actual result is satisfactory but could be improved with more skills and time.
     
 
-  - ### Design
+   ### Design
 
   -   ### Website style
-    - The style of the website chosen was 2 formats, one implemting to the Home-page and the Confirmation, the other one for Be Fierce, Be Real and Be Me. The navigation bar and the little expression above the footer allow the user to navigate to each page. The font-familly chosen for the text are the pair Dancing Script and Josefin Sans giving a feminine touch.
+    - The game is a single page site with several modals that act as popup windows. The style of the website is based 4 rows on 4 columns of cards. Above this display two buttons on their side indicator of time and moves on the top a title. The design should be simple and let the user to play without any distractions. It is designed as a playfull interactive memory game where the user can replay as many times as they wish. It might intrigues the user because all pictures are different characters personified by one person, the artist 2Fik. The timer of 60 seconds push the excitement of the user to find all pair matched or to beat a score if he has already playded.
 
--   ### Imagery
-    -  The visual cohesion is maintained by the photos that represent constantly Ludmilla-Mary. 
+
 
 -   ### Colour Scheme
-    -  The two dominant colors are pink and wite. The pink theme was taken with the chrome Developer tools color picker from one picture where Ludmilla-Mary is dressed in pink. The yellow and blue color schemes were chosen with the same technique.
+    -  The colour scheme was chosen to be soft and harmonious. 
  
 ## Features
 
@@ -87,14 +81,17 @@
 
  
 
- - CSS : No errors were detected when passing the site through the official.
+ - CSS : 
+
+
+ - JavaScript
 
 
 ### Lighthouse Testing
  
 
 
-  - Overall, the site's performances are quite good.
+  - 
 
 
 ### Browser Compatibility
@@ -112,19 +109,19 @@
  - Manual testing on different browsers and devices, those mentionned above and had feedbacks from friends regarding other various devices.
 
 
-_Nav bar testing_
+_NXXXX_
 
  - Test each link on the nav bar. Each link took me to the relevant section required, the Logo took me home as expected. The nav bar stayed in place when scrolling ensuring the user has access to navigation at all times. Nav "active" page effect works as expected when clicking between pages and underlines blue.
 
-_Footer testing_
+_XXXXX_
 
  - Test each social media Icon. Each social media icon link opened the relevant social media website in a new tab as expected when clicked. Footer behaved how I expected appearing at the bottom of the site when the user scrolls or navigates down to the last section (Contact).
 
-_Nav, footer, logo and tip hover effects testing_
+_NXXXXXXXXX_
 
  - Test the expected result of the hover effect on the nav links, as well as the social media icon links on the footer and the tips text above the footer. All nav links and social media icons behaved as expected when hovering over with the mouse, all itemes change to yellow and inscreased their font-size.
 
-_Registration Newsletter testing_
+_XXXXXXXX_
 
  - Test the expected result of filling up the form which sent me to the confirmation page. I checked the drop down text used with the element details. 
 
@@ -137,7 +134,7 @@ _Registration Newsletter testing_
  - In the Github repository, navigate to the Settings tab
  - From the source section drop-down menu, select the main branch
  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
- - The live link can be found here: (https://bakrydiarra.github.io/Project-1-Portfolio/)
+ - The live link can be found here: (https://bakrydiarra.github.io/Project-2-Portfolio-Memory-Game/)
 
  
 ## Credits 
@@ -145,11 +142,9 @@ _Registration Newsletter testing_
 ### Code
   
 
-- HTML and CSS lessons from [W3Schools](https://www.w3schools.com/) were used as guide when designing the site, for example implementing flexbox, background-image properties.
+- 
 
-- The motto form the index page is inspired from @Vlt_dev's code. I used his micro structure and color tpye and then I elevated in a bigger model. Here's the original code (https://www.instagram.com/p/Cj7jr7KD5cU/)
-
-- Code Institute materials were used to assist writing README file, such as the [README template](https://github.com/Code-Institute-Solutions/readme-template) and the [Markdown Cheatsheet](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- 
 
 - The Code Institute [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) was used as a template for the gitpod environment.
 
@@ -159,7 +154,7 @@ _Registration Newsletter testing_
  
  - The fonts used were imported from [Google Fonts](https://fonts.google.com/)
  - The photos used for the website were procvided by the artist 2Fik.
- - Photograhers:
+ - Photograher:
    - 2fik
    
 
