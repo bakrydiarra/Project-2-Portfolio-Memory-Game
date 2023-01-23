@@ -3,14 +3,14 @@
 ## Project Portfolio 2 - Full Stack Development 
 ##  Design an interactive Front-End web application using HTML and CSS and JavaScript 
 
-![Am I responsive Screenshot]
+![Am I responsive](assets/readme/am_I_responsive.png)
 
 ## Site Info
 
 * Match 2fik's Faces is created for all users who like to play simple memory games. The  user who knows 2Fik’s  art work might have an additional interest as well. 
 * This is my Project Portfolio 2 submission for Code Institute's Diploma in Web Application Development course. Technologies used include HTML, CSS, JavaScript.
-
-
+  - [Live here](https://bakrydiarra.github.io/Project-2-Portfolio-Memory-Game/)
+ 
 
 ## Index – Table of Contents
 * [User Experience (UX)](#user-experience-ux)
@@ -25,7 +25,7 @@
 
  - As a user I  can:
 
-   - see a set of cards ranged in fourth rows and fourth columns style game with cards on display - these cards will have a front and back image.
+   - see a set of cards ranged in fourth rows and fourth columns of cards - these cards have a front and back image.
    - read  easy and short explained rules by clicking the button rules
    -  escape the rule explanation by clicking the “x” or the the button play.
    - click a card to start the game
@@ -58,9 +58,22 @@
  ## Skeleton
   - All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 
+  [Mockup desktop](assets/readme/wireframe_desktop.png)
+
+  [Mockup desktop modal window](assets/readme/wireframe_desktop_modal_window.png)
+
+  [Mockup small devices ](assets/readme/wireframe_smallDevices.png)
+
+  [Mockup small devices pop-up window](assets/readme/wireframe_smallDevices_lost.png)
+
+  [Mockup small devices pop-up window](assets/readme/wireframe_smallDevices_rules.png)
+
+  [Mockup small devices pop-up window](assets/readme/wireframe_smallDevices_won.png)
+  
 
  ## Surface
  - The colour scheme was chosen to be soft and harmonious. It has been chosen with the help of (https://mycolor.space/). White was used for the font-family to give a contrast for the reading experience.
+ [Colour Scheme](assets/readme/Pasted_Graphic.png)
 
 ## Typography
  - The chosen font-families are Bungee Shade and Fruktur, fun and distinguishing style to convey a playfull atmosphere.
@@ -79,25 +92,64 @@
 
 ### Existing Features
 
+#### Grid Display
+
+ - Simple layout, using a 4x4 style grid, with a total of 16 cards. The background is linear gradient, using some colors of my chosen color scheme.
+ - [Display Grid](assets/readme/desktop.png)
+
+#### Picture
+
+ - The pictures were provided by the artist 2Fik. They represent 2Fik embodying 8 different characters, which make it playfull to discover all characters ans can be challenging to match pair because they all have something in commun. The backface picture is just anonymous figure of 2Fik.
+
+- [Picture Back Face](assets/images/Portrait-2Fik-Web.webp)
+- [Picture Front Face](assets/images/Portrait-Alice-Web.webp)
+
+#### Navigation buttons
+
+ - All buttons permit - except rules button - to reset the game- We have 3 styling. 
+
+ - [Pictures Button](assets/readme/button1.png)
+ - [Pictures Button](assets/readme/button2.png)
+ - [Pictures Button](assets/readme/button3.png)
+ 
+ #### Rules Modal
+ - A pop-up window explains briefly and straight to the point the rules of the game.
+ - [Rules Modal Window](assets/readme/desktop_rules.png)
+
+ #### Won Modal 
+  - A pop-up window informs the user about his victory, giving his score with timing and count of moves. The styling is similar to the Rules pop-up window and pop-up lost widow.
+  - [Won Modal Window](assets/readme/desktop_won.png)
+
+#### Lost Modal
+ - A pop-up window informs the user about his defeat. The styling is similar to the Rules pop-up window and pop-up lost widow.
+  - [Lost Modal Window](assets/readme/desktop_lost.png)
+
+#### Game Information
+
+ - A timer is activated once the user flips the first card.
+ - A  moves tracker counts each match attempt made, the counter starts the count when the second card had been flipped.
+ - [Indicators](assets/readme/indicators.png)
 
 
 ### Features which could be implemented in the future
 
+ - A modal window which could inform the score from previous users would encourage in a friendly competitive way to participate to the game.
+ - 
 
 
 ## Testing
 
 ### Validator Testing
 
- - HTML : No errors were detected when passing the site through the official.
+ - HTML : No errors were detected : [HTML-Validator](assets/readme/HTML_validator.png)
 
 
  
 
- - CSS : 
+ - CSS : No erros were detected :  [CSS-Validator](assets/readme/CSS_Validator.png)
 
 
- - JavaScript : NO errors were detected when passing the site the official.
+ - JavaScript : NO errors were detected : [JS](assets/readme/js.png)
 
 
 ### Lighthouse Testing
@@ -116,14 +168,31 @@
 ### Test Cases and Results
 
  - Chrome Developer tools and Mozilla Firefox Web Developer Tools were used throughout the development of the site to test functionality, responsive 
-    behaviour, alignment correctness etc.
- - To check the respponsive design, I also used (http://www.responsinator.com/) 
+    behaviour, alignment correctness etc:
+     - BakckBerry z30
+     - BlackBerry PlayBook
+     - iPhone SE
+     - iPhone XR
+     - iPad Air
+     - Surface Duo
+     - Nest Hub
+     - Nest Hub Max
+
+#### Responsive Design
+
+ - The display of the game has been made responsive to allow it to maintain the same grid structure layout in either desktop, tablet, without changing the look of the game.
+
+ - [Responsive Sample](assets/readme/responsive_iPhone.png)
+ - [Responsive Sample](assets/readme/landscape_Responsive.png)
+
+
+ - To check the respponsive design, I also used [Responsinator](http://www.responsinator.com/) 
  - Site responsivness visualised using [Am I Responsive?](https://ui.dev/amiresponsive)
- - Manual testing on different browsers and devices, those mentionned above and had feedbacks from friends regarding other various devices.
+ - Manual testing on different browsers and devices such as iPhone 8, Samsung Galaxy and received feedbacks from friends regarding other various devices.
 
 
 | Feature | Expect | Action | Result |
-| --- | ----------- | ----------- | ----------- |
+| :--- | :--- | :--- | :--- |
 | khk | kjlkjlj | llkjlj | jkjlj  | lkjlk |
 | ljlkj| | | |
 
@@ -191,4 +260,4 @@
 ### Acknowledgments
 
  - Many thanks to my Mentor Antonio Rodriguez for helpful feedback, industry insights and recommended tools.
- - Many thanls to my friends and family for helping me testing the website and for their precious feedbacks.
+ - Many thanks to my friends (Marjorie and Louise) and family for helping me testing the website and for their precious feedbacks.
