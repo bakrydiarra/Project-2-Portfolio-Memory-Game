@@ -38,10 +38,32 @@
    - Reset the game at any time during play.
    - can test his memory skills and enjoy the challenge to beat the timer.
 
+## Strategy
+   - The game is a single page site with several modals that act as popup windows.It might intrigues the user because all pictures are different characters personified by one person, the artist 2Fik. The timer of 60 seconds push the excitement of the user to find all pair matched or to beat a score if he has already playded.  
 
-  - ### Wireframes
-    - All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
+## Scope
+  -  a set of 16 cards with back and front sides.
+  - Rule explanation
+  - Timer
+  - Moves counter
+  - Game result
+  - Reset button
 
+## Structure
+
+ - The style of the website is based 4 rows on 4 columns of cards. Above this display two buttons on their side indicator of time and moves on the top a title.
+ - The design should be simple and let the user to play without any distractions. It is designed as a playfull interactive memory game where the user can replay as many times as they wish.
+
+
+ ## Skeleton
+  - All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
+
+
+ ## Surface
+ - The colour scheme was chosen to be soft and harmonious. It has been chosen with the help of (https://mycolor.space/). White was used for the font-family to give a contrast for the reading experience.
+
+## Typography
+ - The chosen font-families are Bungee Shade and Fruktur, fun and distinguishing style to convey a playfull atmosphere.
    
 
    ### Issues Faced during development
@@ -51,15 +73,6 @@
     - The text content once displayed in column required a lot proportions skills to offer a cohesive visual. The actual result is satisfactory but could be improved with more skills and time.
     
 
-   ### Design
-
-  -   ### Website style
-    - The game is a single page site with several modals that act as popup windows. The style of the website is based 4 rows on 4 columns of cards. Above this display two buttons on their side indicator of time and moves on the top a title. The design should be simple and let the user to play without any distractions. It is designed as a playfull interactive memory game where the user can replay as many times as they wish. It might intrigues the user because all pictures are different characters personified by one person, the artist 2Fik. The timer of 60 seconds push the excitement of the user to find all pair matched or to beat a score if he has already playded.
-
-
-
--   ### Colour Scheme
-    -  The colour scheme was chosen to be soft and harmonious. 
  
 ## Features
 
@@ -84,14 +97,14 @@
  - CSS : 
 
 
- - JavaScript
+ - JavaScript : NO errors were detected when passing the site the official.
 
 
 ### Lighthouse Testing
  
 
 
-  - 
+  -
 
 
 ### Browser Compatibility
@@ -109,22 +122,10 @@
  - Manual testing on different browsers and devices, those mentionned above and had feedbacks from friends regarding other various devices.
 
 
-_NXXXX_
-
- - Test each link on the nav bar. Each link took me to the relevant section required, the Logo took me home as expected. The nav bar stayed in place when scrolling ensuring the user has access to navigation at all times. Nav "active" page effect works as expected when clicking between pages and underlines blue.
-
-_XXXXX_
-
- - Test each social media Icon. Each social media icon link opened the relevant social media website in a new tab as expected when clicked. Footer behaved how I expected appearing at the bottom of the site when the user scrolls or navigates down to the last section (Contact).
-
-_NXXXXXXXXX_
-
- - Test the expected result of the hover effect on the nav links, as well as the social media icon links on the footer and the tips text above the footer. All nav links and social media icons behaved as expected when hovering over with the mouse, all itemes change to yellow and inscreased their font-size.
-
-_XXXXXXXX_
-
- - Test the expected result of filling up the form which sent me to the confirmation page. I checked the drop down text used with the element details. 
-
+| Feature | Expect | Action | Result |
+| --- | ----------- | ----------- | ----------- |
+| khk | kjlkjlj | llkjlj | jkjlj  | lkjlk |
+| ljlkj| | | |
 
 
 
@@ -139,21 +140,46 @@ _XXXXXXXX_
  
 ## Credits 
 
-### Code
+## Technologie used
+
+## Languages Used 
+
+ - HTML- To create a basic site.
+ - CSS- To create the look for the game.
+ - JavaScript- For the logic of the game. To manipulate the HTML and CSS on the screen.
+
+## Progremmes Used
+
+ - [Google Fonts](https://fonts.google.com/knowledge) - to import font-family.
+ - [Balsamiq](https://balsamiq.com/) - for creating a mockup.
+ - [mycolor](https://mycolor.space/) - for creating harmonious colors.
+
+## Tools and Other Resources Used:
+
+ - [Github](https://github.com/) -  for version control and pushing content to repository.  
+ - [Gitpod](https://www.gitpod.io/)  -  for building the site.  
+ - [W3 Schools](https://www.w3schools.com/) - for HTML, CSS, JS tips. 
+ - [Am I Responsive?](https://ui.dev/amiresponsive) - test responsive website
+ - [Responsinator](http://www.responsinator.com/) - test responsive website
+ 
+
+
+
+### Code Used
   
-
-- 
-
-- 
-
-- The Code Institute [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) was used as a template for the gitpod environment.
+ - [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) -  used as a template for the gitpod environment.
+ - [W3 Schools](https://www.w3schools.com/howto/howto_css_flip_image.asp) - used and adapted for the structure of the memory-card and flip effect 3d.
+ - [Love Maths Challenge](https://www.youtube.com/watch?v=C3O-G2ab46Q&list=PLM37jTHCwXy5X9KQA5MqJU7XJttB2rEPc&index=106) - used for function DomContenLoaded function and adapted.
+ - [Build a Fun Memory Card Game with JavaScript](https://www.youtube.com/watch?v=HsD6f7_3nIg&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=3) - used onclick function for cards, add flip class for css effects.
+ - [Build a Fun Memory Card Game with JavaScript](https://www.youtube.com/watch?v=CtFOeJneBaA&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv) - used checking if CardOne & CardTwo 'data-id' are a match.
+ - [Build a Fun Memory Card Game with JavaScript](https://www.youtube.com/watch?v=1G6MwIy-7Yc&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=8) - used for shuffle function and adapted without IIFE.
 
 
 ### Media 
 
  
- - The fonts used were imported from [Google Fonts](https://fonts.google.com/)
- - The photos used for the website were procvided by the artist 2Fik.
+ - [Google Fonts](https://fonts.google.com/) - for the fomt-families
+ - The photos were taken from 2Fik's website with his consent [2Fik](https://2fikornot2fik.com/fr/identities/)
  - Photograher:
    - 2fik
    
