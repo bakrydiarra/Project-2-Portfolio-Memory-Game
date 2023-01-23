@@ -79,11 +79,11 @@
  - The chosen font-families are Bungee Shade and Fruktur, fun and distinguishing style to convey a playfull atmosphere.
    
 
-   ### Issues Faced during development
+## Issues Faced during development
 
-    - Timer
-    - Button Positioning - responsive
-    - 
+    - Timer: As I made my first function to set the timer, it didn't stop at 0, it went with negative number. I had to reajust the if statement timer < = 0 to timer < 1 and move the clearInterval(interval) in the gameOver. I had to include clearInterval(interval) in the rest function before the setTimeout to make sure that the timer would be reset properly.
+    - Button Rest and Rules had to be repositioned many time so that the layout keeps in the game-info-container everything properly. I had to make many tryouts to find the proper dimension for the @ media queries, in order to deliver a responsive display for smaller devices.
+    
 
   
     
@@ -160,8 +160,9 @@
 
 ### Lighthouse Testing
  
- - The performance is to be 
- - 
+ - The performance is to be improved. During running Lighthouse, the first time the performance was 83. There was a suggestion to change picture  format from png to webp. But it hasn't made a real difference.  
+ -  [Lighthouse for desktop](assets/readme/Lighthouse_desktop.png)
+ -  [Lighthouse for mobile](assets/readme/Lighthouse_phone.png)
 
 
 
@@ -201,24 +202,18 @@
 | :--- | :--- | :--- | :--- |
 | Active Homepage | 4x4 grid style game, title, two buttons | clicked live link| positive | 
 | Start Game| By clicking a card | clicked a card | postive |
-| Timer| | | |
-| Flipping Card | Clicking the back face of a card and switch to the front face | clicked the card| positive |
+| Timer| to count from 60 to 0 when the first is clicked | clicked a the first card and saw the timer coutning down | positive |
+| Flipping Card | Clicking the back face of a card and switch to the front face | clicked the card | positive |
 | Click only on two cards at a time | not able to click a third card | clicked a third card = no flipp | positive |
 | Match two cards and lock them| clicking and finding two similar cards | clicked two identical cards and they stay put | positive|
 | No Match Unflipcard | Clicking two cards one after another if no match they front face unflipp to the back face | clicked two cards, no match, they retrun on their back face | positive|
-| Moves tracker| | | |
-| Button Rules | | | |
-| Button- Play, Try Again, Reset and "x"| | | |
+| Moves tracker| By clicking every second card form en eventual pair, it counts one move | clicked two cards. It added a moves  | positive |  
+| Button Rules | Pop-up window to inform the user about the game rules | clicked and accessed to the rules | positive |
+| Button- Play, Try Again, Reset and "x"| By clicking to reset the game and play | clicked and could reset everytime and start a new game | positive |
 | Pop-up Window Rules| | | |
 | Pop-up Window Won | | | |
 | Pop-up Window Lost | | | |
 
-
-
-
-## Bug
-
-- Overlapping modal window.
 
 
 ## Deployment
