@@ -199,13 +199,20 @@
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
-| Display Grid | kjlkjlj | llkjlj | jkjlj  | lkjlk |
-| Front and Back Face| | | |
-| Front and Back Face| | | |
-| Front and Back Face| | | |
-| Front and Back Face| | | |
-| Front and Back Face| | | |
-| Front and Back Face| | | |
+| Active Homepage | 4x4 grid style game, title, two buttons | clicked live link| positive | 
+| Start Game| By clicking a card | clicked a card | postive |
+| Timer| | | |
+| Flipping Card | Clicking the back face of a card and switch to the front face | clicked the card| positive |
+| Click only on two cards at a time | not able to click a third card | clicked a third card = no flipp | positive |
+| Match two cards and lock them| clicking and finding two similar cards | clicked two identical cards and they stay put | positive|
+| No Match Unflipcard | Clicking two cards one after another if no match they front face unflipp to the back face | clicked two cards, no match, they retrun on their back face | positive|
+| Moves tracker| | | |
+| Button Rules | | | |
+| Button- Play, Try Again, Reset and "x"| | | |
+| Pop-up Window Rules| | | |
+| Pop-up Window Won | | | |
+| Pop-up Window Lost | | | |
+
 
 
 
