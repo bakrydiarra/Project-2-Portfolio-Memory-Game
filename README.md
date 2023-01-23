@@ -81,9 +81,11 @@
 
    ### Issues Faced during development
 
-    - Background-image was often used to avoid resizing issue with the images. But the gallery showed that it could have been possible to work with the chosen structure with the img element.
-    - This indicates the possiblity to work later on the visual content to improve the quality of the images and give a better responsive sizing for all devices.
-    - The text content once displayed in column required a lot proportions skills to offer a cohesive visual. The actual result is satisfactory but could be improved with more skills and time.
+    - Timer
+    - Button Positioning - responsive
+    - 
+
+  
     
 
  
@@ -133,8 +135,12 @@
 
 ### Features which could be implemented in the future
 
- - A modal window which could inform the score from previous users would encourage in a friendly competitive way to participate to the game.
- - 
+ - A modal window  leader players- where saving game results-  which could inform the score from previous users would encourage in a friendly competitive way to participate to the game.
+ - Level function where the player could change the timer countdown and eventually add or take away some cards
+ - Animation when the user hoovers over the cards
+ - A clicking sound when the user click on a cards
+ - A music that could start at the moment a card is flipped - with a mute button option
+ - Animation in the won modal window to cheer up more the user to play again
 
 
 ## Testing
@@ -154,9 +160,9 @@
 
 ### Lighthouse Testing
  
+ - The performance is to be 
+ - 
 
-
-  -
 
 
 ### Browser Compatibility
@@ -193,9 +199,19 @@
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
-| khk | kjlkjlj | llkjlj | jkjlj  | lkjlk |
-| ljlkj| | | |
+| Display Grid | kjlkjlj | llkjlj | jkjlj  | lkjlk |
+| Front and Back Face| | | |
+| Front and Back Face| | | |
+| Front and Back Face| | | |
+| Front and Back Face| | | |
+| Front and Back Face| | | |
+| Front and Back Face| | | |
 
+
+
+## Bug
+
+- Overlapping modal window.
 
 
 ## Deployment
@@ -209,21 +225,21 @@
  
 ## Credits 
 
-## Technologie used
+### Technologie used
 
-## Languages Used 
+### Languages Used 
 
  - HTML- To create a basic site.
  - CSS- To create the look for the game.
  - JavaScript- For the logic of the game. To manipulate the HTML and CSS on the screen.
 
-## Progremmes Used
+### Progremmes Used
 
  - [Google Fonts](https://fonts.google.com/knowledge) - to import font-family.
  - [Balsamiq](https://balsamiq.com/) - for creating a mockup.
  - [mycolor](https://mycolor.space/) - for creating harmonious colors.
 
-## Tools and Other Resources Used:
+### Tools and Other Resources Used:
 
  - [Github](https://github.com/) -  for version control and pushing content to repository.  
  - [Gitpod](https://www.gitpod.io/)  -  for building the site.  
@@ -257,7 +273,7 @@
  
  - All texts were written by me.
 
-### Acknowledgments
+## Acknowledgments
 
  - Many thanks to my Mentor Antonio Rodriguez for helpful feedback, industry insights and recommended tools.
  - Many thanks to my friends (Marjorie and Louise) and family for helping me testing the website and for their precious feedbacks.
