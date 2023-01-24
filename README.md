@@ -9,7 +9,7 @@
 
 * Match 2fik's Faces is created for all users who like to play simple memory games. The  user who knows 2Fik’s  art work might have an additional interest as well. 
 * This is my Project Portfolio 2 submission for Code Institute's Diploma in Web Application Development course. Technologies used include HTML, CSS, JavaScript.
-  - [Live here](https://bakrydiarra.github.io/Project-2-Portfolio-Memory-Game/)
+  - Live website [here](https://bakrydiarra.github.io/Project-2-Portfolio-Memory-Game/)
  
 
 ## Index – Table of Contents
@@ -25,25 +25,25 @@
 
  - As a user I  can:
 
-   - see a set of cards ranged in fourth rows and fourth columns of cards - these cards have a front and back image.
+   - see a set of cards ranged in fourth rows and fourth columns of cards - these cards have a front and back face.
    - read  easy and short explained rules by clicking the button rules
    -  escape the rule explanation by clicking the “x” or the the button play.
    - click a card to start the game
    - click only on two cards at a time, to try to find a matched pair.
-   - play on a limited time - 60 seconds - to find all matched pair.
+   - play on a limited time - 60 seconds - to find all matched pairs.
    - expect that once the game has been completed, the timer will stop.
    - receive a message of  victory and score at the end of the game when all matched pairs have been found.
    - receive a message to be informed that he has lost when the timer arrived at 0.
-   -  close the pop up  victory or defeat messages by clicking  on the "x" button or  clicking the button try again.
+   - close the pop up  victory or defeat messages by clicking  on the "x" button or  clicking the button try again.
    - Reset the game at any time during play.
    - can test his memory skills and enjoy the challenge to beat the timer.
 
 ## Strategy
-   - The game is a single page site with several modals that act as popup windows.It might intrigues the user because all pictures are different characters personified by one person, the artist 2Fik. The timer of 60 seconds push the excitement of the user to find all pair matched or to beat a score if he has already playded.  
+   - The game is a single page site with several modals that act as popup windows. The chosen picture might intrigue the user because they are different characters personified by one person, the artist 2Fik. The timer of 60 seconds push the excitement of the user to find all pair matched or to beat his time if he has already playded.  
 
 ## Scope
-  -  a set of 16 cards with back and front sides.
-  - Rule explanation
+  - a set of 16 cards with back and front sides, grid display
+  - Rule explanations
   - Timer
   - Moves counter
   - Game result
@@ -52,7 +52,7 @@
 ## Structure
 
  - The style of the website is based 4 rows on 4 columns of cards. Above this display two buttons on their side indicator of time and moves on the top a title.
- - The design should be simple and let the user to play without any distractions. It is designed as a playfull interactive memory game where the user can replay as many times as they wish.
+ - The design should be simple and let the user to play without any distractions. It is designed as a playfull interactive memory game where the user can replay as many times as they wish. The color are light and paired well to blend in and avoid that the user can't foucus on the game. The content is kept to its minimum. In other words, no need to pay attention to something but playing.
 
 
  ## Skeleton
@@ -83,20 +83,15 @@
 
     - Timer: As I made my first function to set the timer, it didn't stop at 0, it went with negative number. I had to reajust the if statement timer < = 0 to timer < 1 and move the clearInterval(interval) in the gameOver. I had to include clearInterval(interval) in the rest function before the setTimeout to make sure that the timer would be reset properly.
     - Button Rest and Rules had to be repositioned many time so that the layout keeps in the game-info-container everything properly. I had to make many tryouts to find the proper dimension for the @ media queries, in order to deliver a responsive display for smaller devices.
-    
 
-  
-    
 
- 
 ## Features
-
 
 ### Existing Features
 
 #### Grid Display
 
- - Simple layout, using a 4x4 style grid, with a total of 16 cards. The background is linear gradient, using some colors of my chosen color scheme.
+ - Simple layout, using a 4x4 style grid, with a total of 16 cards. The background is linear gradient, using two colors of my chosen color scheme.
  - [Display Grid](assets/readme/desktop.png)
 
 #### Picture
@@ -128,19 +123,19 @@
 
 #### Game Information
 
- - A timer is activated once the user flips the first card.
+ - A timer is activated once the user flips the first card. It goes from 60 to 0. When 0 is reached, it's game over.
  - A  moves tracker counts each match attempt made, the counter starts the count when the second card had been flipped.
  - [Indicators](assets/readme/indicators.png)
 
 
 ### Features which could be implemented in the future
 
- - A modal window  leader players- where saving game results-  which could inform the score from previous users would encourage in a friendly competitive way to participate to the game.
- - Level function where the player could change the timer countdown and eventually add or take away some cards
- - Animation when the user hoovers over the cards
- - A clicking sound when the user click on a cards
- - A music that could start at the moment a card is flipped - with a mute button option
- - Animation in the won modal window to cheer up more the user to play again
+ - A modal window  leader players- where saving game results-  which could inform the score from previous users and would encourage him in a friendly competitive way to play again.
+ - Level function where the player could change the timer countdown and eventually add or take away some cards - an adaptable grid somehow.
+ - Animation when the user hoovers over the cards.
+ - A clicking sound when the user click on a cards.
+ - A music that could start at the moment a card is flipped - with a mute button option.
+ - Animation in the won modal window to cheer up more the user to play again.
 
 
 ## Testing
@@ -149,11 +144,7 @@
 
  - HTML : No errors were detected : [HTML-Validator](assets/readme/HTML_validator.png)
 
-
- 
-
  - CSS : No erros were detected :  [CSS-Validator](assets/readme/CSS_Validator.png)
-
 
  - JavaScript : NO errors were detected : [JS](assets/readme/js.png)
 
@@ -197,22 +188,24 @@
  - Site responsivness visualised using [Am I Responsive?](https://ui.dev/amiresponsive)
  - Manual testing on different browsers and devices such as iPhone 8, Samsung Galaxy and received feedbacks from friends regarding other various devices.
 
+### Testing the user experience
 
 | Feature | Expect | Action | Result |
 | :--- | :--- | :--- | :--- |
 | Active Homepage | 4x4 grid style game, title, two buttons | clicked live link| positive | 
 | Start Game| By clicking a card | clicked a card | postive |
-| Timer| to count from 60 to 0 when the first is clicked | clicked a the first card and saw the timer coutning down | positive |
+| Timer| To count from 60 to 0 when the first is clicked | clicked a the first card and saw the timer coutning down | positive |
+| Timer| 0 seconds trigger a game over | let the timer count down until the lost window appeared | positive |
 | Flipping Card | Clicking the back face of a card and switch to the front face | clicked the card | positive |
-| Click only on two cards at a time | not able to click a third card | clicked a third card = no flipp | positive |
-| Match two cards and lock them| clicking and finding two similar cards | clicked two identical cards and they stay put | positive|
+| Click only on two cards at a time | Not able to click a third card | clicked a third card = no flipp | positive |
+| Match two cards and lock them| Clicking and finding two similar cards | clicked two identical cards and they stayed put | positive|
 | No Match Unflipcard | Clicking two cards one after another if no match they front face unflipp to the back face | clicked two cards, no match, they retrun on their back face | positive|
 | Moves tracker| By clicking every second card form en eventual pair, it counts one move | clicked two cards. It added a moves  | positive |  
 | Button Rules | Pop-up window to inform the user about the game rules | clicked and accessed to the rules | positive |
-| Button- Play, Try Again, Reset and "x"| By clicking to reset the game and play | clicked and could reset everytime and start a new game | positive |
-| Pop-up Window Rules| | | |
-| Pop-up Window Won | | | |
-| Pop-up Window Lost | | | |
+| Button- Play, Try Again, Reset and "x"| By clicking, it resets the game and play | clicked and could reset everytime and start a new game | positive |
+| Pop-up Window Rules| Little window with short explanation | Clicked rules button and could read the rules | positive |
+| Pop-up Window Won | Achieve to find all pairs, a pop-up victory window shows up with score | won the game and got congrat messge with scors  | positive |
+| Pop-up Window Lost | When the  timer reaches 0 pop-up defeat window shows up | let the timer till the end and got my defeat message | positive |
 
 
 
@@ -221,7 +214,7 @@
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
  - In the Github repository, navigate to the Settings tab
  - From the source section drop-down menu, select the main branch
- - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
+ - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
  - The live link can be found here: (https://bakrydiarra.github.io/Project-2-Portfolio-Memory-Game/)
 
  
@@ -246,8 +239,10 @@
  - [Github](https://github.com/) -  for version control and pushing content to repository.  
  - [Gitpod](https://www.gitpod.io/)  -  for building the site.  
  - [W3 Schools](https://www.w3schools.com/) - for HTML, CSS, JS tips. 
- - [Am I Responsive?](https://ui.dev/amiresponsive) - test responsive website
- - [Responsinator](http://www.responsinator.com/) - test responsive website
+ - [Am I Responsive?](https://ui.dev/amiresponsive) - test responsive website.
+ - [Responsinator](http://www.responsinator.com/) - test responsive website.
+ - [TinyPNG](https://tinypng.com/) - to resize picture.
+ - [Online Convert](https://image.online-convert.com/convert-to-webp) - to convert png into webp.
  
 
 
@@ -256,7 +251,7 @@
   
  - [Gitpod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template) -  used as a template for the gitpod environment.
  - [W3 Schools](https://www.w3schools.com/howto/howto_css_flip_image.asp) - used and adapted for the structure of the memory-card and flip effect 3d.
- - [Love Maths Challenge](https://www.youtube.com/watch?v=C3O-G2ab46Q&list=PLM37jTHCwXy5X9KQA5MqJU7XJttB2rEPc&index=106) - used for function DomContenLoaded function and adapted.
+ - [Love Maths Challenge](https://www.youtube.com/watch?v=C3O-G2ab46Q&list=PLM37jTHCwXy5X9KQA5MqJU7XJttB2rEPc&index=106) - used for function DomContenLoaded and adapted.
  - [Build a Fun Memory Card Game with JavaScript](https://www.youtube.com/watch?v=HsD6f7_3nIg&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=3) - used onclick function for cards, add flip class for css effects.
  - [Build a Fun Memory Card Game with JavaScript](https://www.youtube.com/watch?v=CtFOeJneBaA&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv) - used checking if CardOne & CardTwo 'data-id' are a match.
  - [Build a Fun Memory Card Game with JavaScript](https://www.youtube.com/watch?v=1G6MwIy-7Yc&list=PLngoRLGHq3kCpoT0urRHDPsNVTM7aYsiv&index=8) - used for shuffle function and adapted without IIFE.
