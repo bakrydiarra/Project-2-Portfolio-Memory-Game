@@ -228,12 +228,6 @@
  - CSS- To create the look for the game.
  - JavaScript- For the logic of the game. To manipulate the HTML and CSS on the screen.
 
-### Progremmes Used
-
- - [Google Fonts](https://fonts.google.com/knowledge) - to import font-family.
- - [Balsamiq](https://balsamiq.com/) - for creating a mockup.
- - [mycolor](https://mycolor.space/) - for creating harmonious colors.
-
 ### Tools and Other Resources Used:
 
  - [Github](https://github.com/) -  for version control and pushing content to repository.  
@@ -243,9 +237,10 @@
  - [Responsinator](http://www.responsinator.com/) - test responsive website.
  - [TinyPNG](https://tinypng.com/) - to resize picture.
  - [Online Convert](https://image.online-convert.com/convert-to-webp) - to convert png into webp.
+ - [Google Fonts](https://fonts.google.com/knowledge) - to import font-family.
+ - [Balsamiq](https://balsamiq.com/) - for creating a mockup.
+ - [mycolor](https://mycolor.space/) - for creating harmonious colors.
  
-
-
 
 ### Code Used
   
@@ -258,7 +253,6 @@
 
 
 ### Media 
-
  
  - [Google Fonts](https://fonts.google.com/) - for the fomt-families
  - The photos were taken from 2Fik's website with his consent [2Fik](https://2fikornot2fik.com/fr/identities/)
